@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "IBM Plex Sans", sans-serif;
+}
+  
+body {
+  min-height: 100vh;
+  width: 100vw;
+  background-image: url("images/background.jpg");
+  /* background: linear-gradient(135deg, #2E004F, #4B0082); */
+}
+
+header {
+  background-color: rgba(0, 0, 0, 0.85);
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  border-bottom: 2px solid #7B1FA2;
+}
+
+.logo {
+  font-size: 2rem;
+  font: bold;
+  margin-left: 10%;
+}
+
+.search-bar {
+  margin-right: 15%;
+}
+
+.search-bar input {
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  width: 300px;
+}
+
+.search-bar input:focus {
+  outline: none;
+}
+
+.main-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    height: 75vh;
+}
+
+.text-content {
+    display: flex;
+    margin-left: 10%;
+    flex-direction: column;
+    width: 48%;
+    padding: 30px;
+}
+
+.text-content h1 {
+    font-size: 48px;
+    color: #fff;
+}
+
+.text-content p {
+    font-size: 22px;
+    color: #fff;
+    margin-top: 20px;
+    line-height: 1.6;
+}
+
+.image-content {
+    width: 40%;
+}
+
+.image-content img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+}
