@@ -9,7 +9,6 @@ body {
   min-height: 100vh;
   width: 100vw;
   background-image: url("images/background.jpg");
-  /* background: linear-gradient(135deg, #2E004F, #4B0082); */
 }
 
 header {
@@ -58,6 +57,9 @@ header {
 .logo {
   font-size: 2rem;
   font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
+  color: #fff;
 }
 
 .search-bar {
