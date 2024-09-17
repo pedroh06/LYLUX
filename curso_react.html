@@ -14,7 +14,8 @@
             <a href="index.html" class="logo">LYLUX</a>
         </div>
         <div class="search-bar">
-            <input type="text" placeholder="O que você deseja aprender?">
+            <input type="text" id="search-input" placeholder="O que você deseja aprender?">
+            <div id="suggestions" class="suggestions"></div>
         </div>
     </header>
 
@@ -37,7 +38,6 @@
                 </div>
             </div>
 
-            <!-- Módulo 1 -->
             <div class="card">
                 <h2>Módulo 1: Introdução ao React</h2>
                 <p>Compreenda os conceitos básicos do React e como ele funciona para criar interfaces dinâmicas.</p>
@@ -46,7 +46,6 @@
                 </video>
             </div>
 
-            <!-- Módulo 2 -->
             <div class="card">
                 <h2>Módulo 2: Componentes e Props</h2>
                 <p>Aprenda a criar componentes reutilizáveis e usar props para passar dados entre eles.</p>
@@ -55,7 +54,6 @@
                 </video>
             </div>
 
-            <!-- Módulo 3 -->
             <div class="card">
                 <h2>Módulo 3: Gerenciamento de Estado</h2>
                 <p>Descubra como gerenciar o estado dos seus componentes e criar aplicações interativas.</p>
@@ -65,5 +63,7 @@
             </div>
         </section>
     </main>
+
+    <script src="main.js"></script>
 </body>
 </html>

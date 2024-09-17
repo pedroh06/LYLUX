@@ -14,7 +14,8 @@
             <a href="index.html" class="logo">LYLUX</a>
         </div>
         <div class="search-bar">
-            <input type="text" placeholder="O que você deseja aprender?">
+            <input type="text" id="search-input" placeholder="O que você deseja aprender?">
+            <div id="suggestions" class="suggestions"></div>
         </div>
     </header>
 
@@ -37,7 +38,6 @@
                 </div>
             </div>
 
-            <!-- Módulo 1 -->
             <div class="card">
                 <h2>Módulo 1: Aprendizado Supervisionado</h2>
                 <p>Entenda os principais algoritmos de aprendizado supervisionado, como regressão linear e árvores de decisão.</p>
@@ -46,7 +46,6 @@
                 </video>
             </div>
 
-            <!-- Módulo 2 -->
             <div class="card">
                 <h2>Módulo 2: Redes Neurais</h2>
                 <p>Aprenda como construir e treinar redes neurais para resolver problemas complexos.</p>
@@ -55,7 +54,6 @@
                 </video>
             </div>
 
-            <!-- Módulo 3 -->
             <div class="card">
                 <h2>Módulo 3: Aprendizado Não Supervisionado</h2>
                 <p>Explore algoritmos como K-means e PCA para aprendizado sem rótulos.</p>
@@ -65,5 +63,7 @@
             </div>
         </section>
     </main>
+
+    <script src="main.js"></script>
 </body>
 </html>

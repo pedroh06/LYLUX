@@ -14,7 +14,8 @@
             <a href="index.html" class="logo">LYLUX</a>
         </div>
         <div class="search-bar">
-            <input type="text" placeholder="O que você deseja aprender?">
+            <input type="text" id="search-input" placeholder="O que você deseja aprender?">
+            <div id="suggestions" class="suggestions"></div>
         </div>
     </header>
 
@@ -37,7 +38,6 @@
                 </div>
             </div>
 
-            <!-- Módulo 1 -->
             <div class="card">
                 <h2>Módulo 1: Excel Avançado</h2>
                 <p>Aprenda a utilizar funções avançadas, tabelas dinâmicas e gráficos interativos no Excel.</p>
@@ -46,7 +46,6 @@
                 </video>
             </div>
 
-            <!-- Módulo 2 -->
             <div class="card">
                 <h2>Módulo 2: Dashboards com Power BI</h2>
                 <p>Crie visualizações interativas e relatórios impactantes com o Power BI.</p>
@@ -56,5 +55,7 @@
             </div>
         </section>
     </main>
+
+    <script src="main.js"></script>
 </body>
 </html>

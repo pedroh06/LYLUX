@@ -14,7 +14,8 @@
             <a href="index.html" class="logo">LYLUX</a>
         </div>
         <div class="search-bar">
-            <input type="text" placeholder="O que você deseja aprender?">
+            <input type="text" id="search-input" placeholder="O que você deseja aprender?">
+            <div id="suggestions" class="suggestions"></div>
         </div>
     </header>
 
@@ -37,7 +38,6 @@
                 </div>
             </div>
 
-            <!-- Módulo 1 -->
             <div class="card">
                 <h2>Módulo 1: Fundamentos do Spring Framework</h2>
                 <p>Compreenda o Spring Framework e como utilizá-lo para criar aplicações Java robustas.</p>
@@ -46,7 +46,6 @@
                 </video>
             </div>
 
-            <!-- Módulo 2 -->
             <div class="card">
                 <h2>Módulo 2: Spring Boot</h2>
                 <p>Aprenda a configurar e iniciar aplicações rapidamente com o Spring Boot.</p>
@@ -55,7 +54,6 @@
                 </video>
             </div>
 
-            <!-- Módulo 3 -->
             <div class="card">
                 <h2>Módulo 3: Segurança e Autenticação</h2>
                 <p>Implemente autenticação e segurança em suas aplicações Spring com o Spring Security.</p>
@@ -65,5 +63,7 @@
             </div>
         </section>
     </main>
+
+    <script src="main.js"></script>
 </body>
 </html>

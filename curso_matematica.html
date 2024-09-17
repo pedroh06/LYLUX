@@ -14,7 +14,8 @@
             <a href="index.html" class="logo">LYLUX</a>
         </div>
         <div class="search-bar">
-            <input type="text" placeholder="O que você deseja aprender?">
+            <input type="text" id="search-input" placeholder="O que você deseja aprender?">
+            <div id="suggestions" class="suggestions"></div>
         </div>
     </header>
 
@@ -37,7 +38,6 @@
                 </div>
             </div>
 
-            <!-- Módulo 1 -->
             <div class="card">
                 <h2>Módulo 1: Álgebra Linear</h2>
                 <p>Aprenda os fundamentos de vetores, matrizes e suas aplicações em ciência de dados.</p>
@@ -46,7 +46,6 @@
                 </video>
             </div>
 
-            <!-- Módulo 2 -->
             <div class="card">
                 <h2>Módulo 2: Cálculo Diferencial</h2>
                 <p>Entenda derivadas, integrais e suas aplicações na modelagem matemática de dados.</p>
@@ -55,7 +54,6 @@
                 </video>
             </div>
 
-            <!-- Módulo 3 -->
             <div class="card">
                 <h2>Módulo 3: Probabilidade e Inferência Estatística</h2>
                 <p>Explore distribuições de probabilidade, testes de hipótese e inferência estatística.</p>
@@ -65,5 +63,7 @@
             </div>
         </section>
     </main>
+
+    <script src="main.js"></script>
 </body>
 </html>
