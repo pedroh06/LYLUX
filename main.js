@@ -8,20 +8,15 @@ document.addEventListener('DOMContentLoaded', () => {
         { text: 'Front-end', url: 'area_frontend.html' }
     ];
 
-    function showSuggestions() {
-        const query = searchInput.value.toLowerCase();
+    function showSuggestions(query = '') {
         suggestionsContainer.innerHTML = '';
 
-        if (query) {
-            const filteredSuggestions = suggestions.filter(suggestion =>
-                suggestion.text.toLowerCase().includes(query)
-            );
+        const filteredSuggestions = suggestions.filter(suggestion =>
+            suggestion.text.toLowerCase().includes(query.toLowerCase())
+        );
 
-            if (filteredSuggestions.length > 0) {
-                suggestionsContainer.classList.add('show'); 
-            } else {
-                suggestionsContainer.classList.remove('show'); 
-            }
+        if (filteredSuggestions.length > 0) {
+            suggestionsContainer.classList.add('show');
 
             filteredSuggestions.forEach(suggestion => {
                 const suggestionElement = document.createElement('div');
@@ -32,17 +27,40 @@ document.addEventListener('DOMContentLoaded', () => {
                 });
                 suggestionsContainer.appendChild(suggestionElement);
             });
-
-            if (filteredSuggestions.length === 0) {
-                const noResults = document.createElement('div');
-                noResults.classList.add('suggestion-item');
-                noResults.textContent = 'Nenhum resultado encontrado';
-                suggestionsContainer.appendChild(noResults);
-            }
+        } else if (query !== '') {
+            suggestionsContainer.classList.add('show');
+            const noResults = document.createElement('div');
+            noResults.classList.add('suggestion-item');
+            noResults.textContent = 'Nenhum resultado encontrado';
+            suggestionsContainer.appendChild(noResults);
         } else {
-            suggestionsContainer.classList.remove('show'); 
+            suggestionsContainer.classList.add('show');
+            suggestions.forEach(suggestion => {
+                const suggestionElement = document.createElement('div');
+                suggestionElement.classList.add('suggestion-item');
+                suggestionElement.textContent = suggestion.text;
+                suggestionElement.addEventListener('click', () => {
+                    window.location.href = suggestion.url;
+                });
+                suggestionsContainer.appendChild(suggestionElement);
+            });
         }
     }
 
-    searchInput.addEventListener('input', showSuggestions);
+    searchInput.addEventListener('click', (event) => {
+        event.stopPropagation(); 
+        showSuggestions(searchInput.value); 
+    });
+
+    searchInput.addEventListener('input', () => {
+        showSuggestions(searchInput.value); 
+    });
+
+    document.addEventListener('click', () => {
+        suggestionsContainer.classList.remove('show');
+    });
+
+    suggestionsContainer.addEventListener('click', (event) => {
+        event.stopPropagation(); 
+    });
 });
