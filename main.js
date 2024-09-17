@@ -5,7 +5,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const suggestions = [
         { text: 'Ciência de Dados', url: 'area_ciencia_dados.html' },
         { text: 'Back-end', url: 'area_backend.html' },
-        { text: 'Front-end', url: 'area_frontend.html' }
+        { text: 'Front-end', url: 'area_frontend.html' },
+        { text: 'Redes', url: 'area_redes.html' }
     ];
 
     function showSuggestions(query = '') {
