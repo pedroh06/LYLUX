@@ -65,3 +65,9 @@ document.addEventListener('DOMContentLoaded', () => {
         event.stopPropagation(); 
     });
 });
+
+
+function markAsWatched(button) {
+    const card = button.closest('.card');
+    card.classList.toggle('watched');
+}
