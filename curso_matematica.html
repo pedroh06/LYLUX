@@ -19,25 +19,32 @@
             <div id="suggestions" class="suggestions"></div>
         </div>
     </header>
+    <!-- Tab links -->
+    <div class="tab">
+        <button class="tablinks" onclick="abrirTab(event, 'Principal')">Principal</button>
+        <button class="tablinks" onclick="abrirTab(event, 'Materiais')">Materiais</button>
+    </div>
+    
+    <!--Principal-->
+    <div id="Principal" class="tabcontent">
+        <main class="course-container">
+            <section class="course-header">
+                <h1>Matemática e Estatística Aplicada para Ciência de Dados</h1>
+                <p>Desenvolva uma base sólida em matemática e estatística para aplicar em problemas reais de dados. Professor: Pedro Girotto.</p>
+            </section>
 
-    <main class="course-container">
-        <section class="course-header">
-            <h1>Matemática e Estatística Aplicada para Ciência de Dados</h1>
-            <p>Desenvolva uma base sólida em matemática e estatística para aplicar em problemas reais de dados. Professor: Pedro Girotto.</p>
-        </section>
-
-        <section class="course-content">
-            <div class="card professor-card">
-                <div class="card-content">
-                    <div class="professor-image">
-                        <img src="images/professor_icon.png" alt="Professor Pedro Girotto">
-                    </div>
-                    <div class="professor-details">
-                        <h2>Sobre o Professor Pedro Girotto</h2>
-                        <p>Pedro Girotto é doutor em matemática aplicada, com mais de 15 anos de experiência ensinando disciplinas de estatística e matemática para ciência de dados.</p>
+            <section class="course-content">
+                <div class="card professor-card">
+                    <div class="card-content">
+                        <div class="professor-image">
+                            <img src="images/professor_icon.png" alt="Professor Pedro Girotto">
+                        </div>
+                        <div class="professor-details">
+                            <h2>Sobre o Professor Pedro Girotto</h2>
+                            <p>Pedro Girotto é doutor em matemática aplicada, com mais de 15 anos de experiência ensinando disciplinas de estatística e matemática para ciência de dados.</p>
+                        </div>
                     </div>
                 </div>
-            </div>
 
             <div class="card">
                 <h2>Módulo 1: Álgebra Linear</h2>
@@ -67,7 +74,44 @@
             </div>
         </section>
     </main>
-
+    </div>
+    <!--materiais-->
+    <div id="Materiais" class="tabcontent">
+        <main class="materials-container">
+            <section class="materials-header">
+                <h1>Materiais de Estudo</h1>
+                <p>Encontre recursos adicionais para aprofundar seus conhecimentos em matemática e estatística.</p>
+            </section>
+        
+            <section class="materials-content">
+                <div class="card material-card">
+                    <h2>Leitura Recomendada: Álgebra Linear</h2>
+                    <p>Introdução aos conceitos de álgebra linear com exemplos práticos.</p>
+                    <a href="downloads/algebra_linear.pdf" class="download-button">Baixar PDF</a>
+                </div>
+        
+                <div class="card material-card">
+                    <h2>Vídeo: Cálculo Diferencial</h2>
+                    <p>Assistir a um vídeo sobre as principais técnicas de cálculo diferencial.</p>
+                    <video controls width="100%">
+                        <source src="videos/calculo_diferencial.mp4" type="video/mp4">
+                    </video>
+                </div>
+        
+                <div class="card material-card">
+                    <h2>Exercícios: Probabilidade e Inferência Estatística</h2>
+                    <p>Conjunto de exercícios práticos para aplicar os conceitos aprendidos.</p>
+                    <a href="downloads/exercicios_probabilidade.zip" class="download-button">Baixar Exercícios</a>
+                </div>
+        
+                <div class="card material-card">
+                    <h2>Artigo: Aplicações de Estatística em Ciência de Dados</h2>
+                    <p>Leitura sobre como a estatística é aplicada na análise de dados.</p>
+                    <a href="downloads/aplicacoes_estatistica.pdf" class="download-button">Baixar Artigo</a>
+                </div>
+            </section>
+        </main>
+    </div>
     <script src="main.js"></script>
 </body>
 </html>
