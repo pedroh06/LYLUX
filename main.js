@@ -112,6 +112,7 @@ function markAsWatched(button) {
 //Função de tabs (pagina curso_matematica)
 function abrirTab(evt, nome) {
     // Declare all variables
+    // melhor utilizar let ou const. Você está alocando espaço na memória até o fim do programa.
     var i, tabcontent, tablinks;
   
     // Get all elements with class="tabcontent" and hide them
